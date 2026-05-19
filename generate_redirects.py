@@ -88,7 +88,7 @@ def sanitize_for_myst_url(path: str) -> str:
 
     # Remove leading numbers and hyphens, accounting for cases
     # where a number is the entire name
-    slug = "/".join([re.sub(r"^[\d-]+", "", s) or s for s in slug.split("/")])
+    # slug = "/".join([re.sub(r"^[\d-]+", "", s) or s for s in slug.split("/")])
 
     # Strip leading/trailing hyphens from each path component
     # This preserves directory structure while cleaning each component
